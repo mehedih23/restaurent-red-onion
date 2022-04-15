@@ -1,8 +1,9 @@
 .header-container{
-    height: 100vh;
     background: url('https://i.ibb.co/s5Lws5h/bannerbackground.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size : cover;
+    background-position: center;
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;

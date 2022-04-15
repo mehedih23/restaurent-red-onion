@@ -1,17 +1,13 @@
-import './Breakfasts.css'
-import React, { useEffect, useState } from 'react'
+import './Breakfasts'
 import Breakfast from '../Breakfast/Breakfast'
+import useItems from '../../Hooks/useItems'
+
 
 const Breakfasts = () => {
-    const [breakfasts, setBreakfasts] = useState([])
-    useEffect(() => {
-        fetch('breakfast.json')
-            .then(response => response.json())
-            .then(data => setBreakfasts(data));
-    }, [])
+    const [breakfasts] = useItems();
     return (
-        <div className='container '>
-            <div className='row gx-5 gy-0'>
+        <div className='container'>
+            <div className='row gy-4'>
                 {
                     breakfasts.map(breakfast => <Breakfast
                         key={breakfast.id}
@@ -22,4 +18,5 @@ const Breakfasts = () => {
         </div>
     )
 }
+
 export default Breakfasts

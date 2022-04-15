@@ -1,9 +1,10 @@
-import './Breakfast.css'
+import './Lunch.css'
 import React from 'react'
 
-const Breakfast = (props) => {
+const Lunch = (props) => {
+
     console.log(props)
-    const { image, name, price, about } = props.breakfast;
+    const { image, name, price, about } = props.lunch;
 
 
     return (
@@ -19,4 +20,4 @@ const Breakfast = (props) => {
     )
 }
 
-export default Breakfast
+export default Lunch
