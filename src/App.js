@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Breakfasts from './Components/Breakfasts/Breakfasts';
 import Lunches from './Components/Lunches/Lunches';
 import Dinners from './Components/Dinners/Dinners';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
 
       </Routes>
+      <Footer></Footer>
 
     </div>
   );

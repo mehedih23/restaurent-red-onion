@@ -1,6 +1,7 @@
 import './Home.css'
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import ChooseAll from '../ChooseAll/ChooseAll'
 
 const Home = () => {
     return (
@@ -13,10 +14,10 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <div>
-                    <Link to='breakfasts'>Breakfast</Link>
-                    <Link to='lunch'>Lunch</Link>
-                    <Link to='dinner'>Dinner</Link>
+                <div className='text-center my-5'>
+                    <Link className='btn fw-bold' to='breakfasts'>Breakfast</Link>
+                    <Link className='btn fw-bold' to='lunch'>Lunch</Link>
+                    <Link className='btn fw-bold' to='dinner'>Dinner</Link>
                 </div>
                 <Outlet></Outlet>
             </div>
@@ -24,6 +25,13 @@ const Home = () => {
                 <div className='text-center my-5'>
                     <button className="btn btn-outline-danger">Checkout Your Food</button>
                 </div>
+            </div>
+            <div>
+                <div className='container'>
+                    <h2>Why you choose us?</h2>
+                    <p className='w-50'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quo aliquid voluptatibus sequi temporibus aspernatur magni tempore nam vero.</p>
+                </div>
+                <ChooseAll></ChooseAll>
             </div>
         </div>
     )
