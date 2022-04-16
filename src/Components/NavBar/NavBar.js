@@ -19,8 +19,8 @@ const NavBar = () => {
                         <CustomLink className='mx-2 py-2 px-3 ' to="/cart">
                             <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                         </CustomLink>
-                        <CustomLink className='mx-2 py-2 px-3 ' to="/deets">Login</CustomLink>
-                        <CustomLink className='mx-2 py-2 px-3 rounded-pill bg-danger' to="/memes">Sign up</CustomLink>
+                        <CustomLink className='mx-2 py-2 px-3 ' to="/login">Login</CustomLink>
+                        <CustomLink className='mx-2 py-2 px-3 rounded-pill bg-danger' to="/signup">Sign up</CustomLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

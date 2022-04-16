@@ -7,6 +7,8 @@ import Breakfasts from './Components/Breakfasts/Breakfasts';
 import Lunches from './Components/Lunches/Lunches';
 import Dinners from './Components/Dinners/Dinners';
 import Footer from './Components/Footer/Footer';
+import Login from './Components/Login/Login';
+import Signup from './Components/Signup/Signup';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path='lunch' element={<Lunches></Lunches>}></Route>
           <Route path='dinner' element={<Dinners></Dinners>}></Route>
         </Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/signup' element={<Signup></Signup>}></Route>
 
 
       </Routes>
