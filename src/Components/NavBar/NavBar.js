@@ -10,7 +10,7 @@ const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
-                <CustomLink to="/home">
+                <CustomLink to="/">
                     <img className='brand-logo' src="https://i.ibb.co/Ln9GbY8/logo2.png" alt="brand-logo" />
                 </CustomLink>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

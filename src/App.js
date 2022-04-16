@@ -9,11 +9,13 @@ import Dinners from './Components/Dinners/Dinners';
 import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
 import Signup from './Components/Signup/Signup';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <div>
       <NavBar></NavBar>
+      <Toaster></Toaster>
       <Routes>
         <Route path='/' element={<Home></Home>}>
           <Route index element={<Breakfasts></Breakfasts>}></Route>
